@@ -130,7 +130,7 @@ class SQLiteAdapter {
       // 开始事务
       await this.db.exec("BEGIN TRANSACTION");
 
-      // 执行所有语句
+      // 执行所有语句 
       const results = [];
       for (const statement of statements) {
         if (typeof statement === "string") {
